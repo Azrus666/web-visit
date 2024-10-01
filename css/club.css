@@ -1,0 +1,136 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+}
+@font-face
+{
+    font-family: iran-num-bold;
+    src: url("../font/number/Vazir-Bold-FD-WOL.eot");
+    src: url("../font/number/Vazir-Bold-FD-WOL.ttf");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff2");
+}
+
+.club-part
+{
+    direction: rtl;
+    max-width: 1250px;
+    background: linear-gradient(45deg, #35a6c8 33%, #007295 70%);
+    border-radius: 7px;
+    margin: 1rem auto 1rem auto;
+    padding: 12px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: iran, sans-serif;
+
+}
+.club-title-part
+{
+display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.club-title-part img
+{
+    height: 32px;
+    width: 120px;
+
+}
+
+.club-item-part
+{
+    display: flex;
+    align-items: center;
+}
+
+.item-part
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 0 0 .2rem;
+    font-family: iran, sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item-part1
+{
+    border-radius: 0 7px 7px 0;
+}
+.item-part3
+{
+    border-radius: 7px 0 0 7px ;
+}
+
+
+
+
+
+
+.score-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+}
+.score-item span
+{
+    font-size: 25px;
+    font-family: iran-num-bold,sans-serif;
+    margin: 0 6px 0 3px;
+
+}
+.score-item p
+{
+    font-size: 12px;
+
+}
+.club-item-main-pic{
+    height: 68px;
+    padding: 2px;
+    width: 165px;
+}
+.club-logo
+{
+    width: 20px;
+    height: 20px;
+    margin: 0 .7rem;
+}
+@media screen and (max-width: 1100px)
+{
+
+    .club-part
+    {
+        flex-direction: column;
+    }
+    .score-item
+    {
+        display: none
+    }
+
+}
+
+@media screen and (max-width: 820px)
+{
+    .item-part
+    {
+        flex-direction: column;
+        margin: .7rem 0 0 .2rem ;
+
+    }
+    .club-item-part
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

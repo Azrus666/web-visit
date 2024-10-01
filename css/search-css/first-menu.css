@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../../font/Vazir.eot");
+    src: url("../../font/Vazir.ttf");
+    src: url("../../font/Vazir.woff");
+    src: url("../../font/Vazir.woff2");
+}
+
+
+.category-bar
+{
+    direction: rtl;
+    max-width:1440px;
+    margin: 0 auto;
+    font-family: iran, sans-serif;
+}
+.parent
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+
+}
+
+.road-map
+{
+    font-size: 12px;
+    color: #81858b;
+    margin: 1rem .5rem 2rem 0;
+}
+.cat-name
+{
+    font-size: 14px;
+    margin: 0 .5rem 1rem 0;
+}
+
+
+.cat-item
+{
+    flex-direction: column;
+    padding: 1.8rem 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f1;
+    margin: 2rem 0;
+    border-radius: 10px;
+    transition: width .4s;
+}
+
+.cat-item img
+{
+    width: 85px;
+    height: 90px;
+    mix-blend-mode: multiply;
+    padding: 0 0 .8rem 0;
+
+}
+.cat-item span
+{
+    font-size: 12px;
+}

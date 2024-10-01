@@ -1,0 +1,266 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+}
+@font-face
+{
+    font-family: iran-num;
+    src: url("../font/number/Vazir-FD-WOL.eot");
+    src: url("../font/number/Vazir-FD-WOL.ttf");
+    src: url("../font/number/Vazir-FD-WOL.woff");
+    src: url("../font/number/Vazir-FD-WOL.woff2");
+}
+
+*
+{
+    font-family: iran,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.off-poster-container
+{
+    direction: rtl;
+    max-width: 1250px;
+    margin: 0 auto 1rem;
+    background: no-repeat url("../pic/off-poster-pics/freshPattern.svg") #f5f5f5;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: iran, sans-serif;
+
+}
+
+.poster-right-side
+{
+    display: flex;
+    align-items: center;
+
+}
+.text-img
+{
+    width: 270px;
+    height: 30px;
+    margin: 0 1rem;
+}
+.basket-img
+{
+    margin: 0 1rem 0 0;
+    width: 66px;
+    height: 64px;
+}
+
+.off-text
+{
+  font-size: 1rem;
+    background-color: #39AE00;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 .8rem;
+    border-radius: 15px;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: iran-num, sans-serif;
+
+
+}
+
+.poster-item-container
+{
+    height: 80px;
+    display: flex;
+
+
+}
+.poster-left-side
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 2rem;
+}
+
+.poster-item
+{
+    position: relative;
+    text-decoration: none;
+    display: block;
+
+}
+
+.poster-off-percent
+{
+    background-color: #ef4056;
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    border-radius: 5px;
+    position: relative;
+    right: 20px;
+    font-family: iran-num, sans-serif;
+
+}
+
+.poster-item img
+{
+    width: 58px;
+    height: 58px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}
+
+.more-text
+{
+    margin: 0 1rem 0 0;
+    font-size: .8rem;
+    background-color: white;
+    border-radius: 25px;
+    color: #39AE00;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-family: iran-num, sans-serif;
+    cursor: pointer;
+}
+.more-text-res
+{
+    margin: 0 1rem 0 0;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 25px;
+    color: #39AE00;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-family: iran-num, sans-serif;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1242px)
+{
+ .off-text
+ {
+     display: none;
+ }
+}
+
+
+@media screen and (max-width: 1122px)
+{
+    .poster-item1
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1018px)
+{
+    .poster-item2
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 930px)
+{
+    .poster-item3
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .poster-item4
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 753px)
+{
+    .text-img
+    {
+        width: 190px;
+        height: 30px;
+        margin: 0 1rem;
+    }
+    .poster-item img
+    {
+        width: 51px;
+        height: 51px;
+        margin: 14px 0 0 0;
+    }
+    .more-text
+    {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 645px)
+{
+    .poster-item
+    {
+        display: none;
+    }
+    .basket-img
+    {
+        width: 56px;
+        height: 54px;
+    }
+    .text-img
+    {
+        width: 170px;
+        height: 30px;
+        margin: 0 1rem;
+    }
+
+}
+@media screen and (max-width: 451px)
+{
+    .text-img
+    {
+        width: 155px;
+        height: 30px;
+        margin: 0 1rem;
+    }
+
+    .basket-img
+    {
+        width: 49px;
+        height: 47px;
+    }
+    .more-text
+    {
+        display: none;
+
+    }
+    .more-text-res
+    {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 412px)
+{
+    .text-img
+    {
+        width: 130px;
+        height: 30px;
+        margin: 0 .5rem;
+        text-align: center;
+    }
+    .basket-img
+    {
+        width: 44px;
+        height: 42px;
+    }
+
+
+}

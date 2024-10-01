@@ -1,0 +1,142 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+}
+@font-face
+{
+    font-family: iran-num-bold;
+    src: url("../font/number/Vazir-Bold-FD-WOL.eot");
+    src: url("../font/number/Vazir-Bold-FD-WOL.ttf");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff2");
+}
+
+.elected-part
+{
+    max-width: 1250px;
+    margin: 2rem auto 0 auto;
+    font-family: iran, sans-serif;
+    border: 1px solid rgba(0,0,0,.20);
+    border-radius: 15px;
+    padding: 0 10px .2rem 10px;
+    min-width: 320px;
+
+}
+
+.elected-part-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    margin: 1rem 0 2rem 0 ;
+}
+.elected-part-title img
+{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 .7rem;
+}
+
+.elected-part-container
+{
+       width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+
+}
+
+.elected-item
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.20);
+    border-top: none;
+    border-right: none;
+
+}
+
+.elected-item-pic
+{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+.elected-off-price
+
+{
+margin: 1rem 0 .3rem .5rem;
+}
+
+.last-elect-item
+{
+    border-left: none;
+}
+.bottom-elect-item
+{
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .elected-part-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .last-elect-item
+    {
+        border-left: 1px solid rgba(0,0,0,.20);
+    }
+    .bottom-elect-item
+    {
+        border-bottom: 1px solid rgba(0,0,0,.20);
+    }
+
+    .sec-last-elect
+    {
+        border-bottom: none;
+    }
+    .even-elect
+    {
+        border-top:none ;
+        border-right: none;
+    }
+    .odd-elect
+    {
+        border-top:none ;
+        border-right: none;
+        border-left: none;
+    }
+    .elected-item-pic
+    {
+        width: 160px;
+        height: 160px;
+    }
+
+}
+@media screen and (max-width: 425px)
+{
+    .elected-part-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .even-elect
+    {
+      border:none ;
+    }
+    .odd-elect
+    {
+        border: none;
+    }
+
+
+}

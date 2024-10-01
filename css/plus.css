@@ -1,0 +1,183 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+}
+@font-face
+{
+    font-family: iran-num-bold;
+    src: url("../font/number/Vazir-Bold-FD-WOL.eot");
+    src: url("../font/number/Vazir-Bold-FD-WOL.ttf");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff2");
+}
+
+.plus-part
+{
+    direction: rtl;
+    max-width: 1250px;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 16px;
+    background-color: #941b80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: iran, sans-serif;
+    transition: .4s;
+    flex-wrap: wrap;
+    min-width: 320px;
+}
+
+.plus-left-side
+{
+    margin: 10px 0 10px 10px;
+    width: 67%;
+    height: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.plus-right-side
+{
+    background-color: #941b80;
+    background-image: url("../pic/plus-part/plus-widget.png");
+    background-repeat: no-repeat;
+    background-position-x:0;
+    background-position-y: 100%;
+    background-size: 379px 272px;
+    width: 30%;
+    height: 327px;
+    padding: 28px 28px 0 0 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.plus-description
+{
+    color: white;
+    font-size: 11px;
+    margin: .5rem 0 0 0 ;
+}
+.sign-btn
+{
+    background-color: #941b80;
+    border: none;
+    outline: 1px solid white;
+    padding: 4px 16px;
+    height: 35px;
+    width: 100px;
+    color: white;
+    margin: 1rem 0 0 0 ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.left-side-title
+{
+    width: 100%;
+    height: 33px;
+    display: flex;
+    margin: 0 0 1rem 0;
+    justify-content: space-between;
+    color: #941b80;
+}
+.title-des
+{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-des i
+{
+    font-size: 22px;
+    color: #941b80;
+    margin: 0 0 0 .4rem;
+
+}
+
+.title-more
+{
+    font-size: 14px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.plus-item-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.plus-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 0 1rem;
+    font-family: iran-num-bold,sans-serif;
+    cursor: pointer;
+}
+
+.plus-item img
+{
+    height: 116px;
+    width: 116px;
+}
+.plus-item span
+{
+    display: flex;
+    background-color: white;
+    color: #941b80;
+    font-size: 10px;
+    position: relative;
+    bottom: 16px;
+    align-self: flex-start;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.plus-item span svg
+{
+    height: 16px;
+    width: 16px;
+    margin: 0 .2rem;
+}
+
+@media screen and (max-width: 890px)
+{
+
+    .plus-item-container
+    {
+    justify-content: center;
+
+    }
+
+}
+@media screen and (max-width: 769px)
+{
+
+    .plus-part
+    {
+        flex-direction: column;
+    }
+    .plus-right-side
+    {
+        width: 90%;
+    }
+    .plus-left-side
+    {
+        width: 90%;
+    }
+}

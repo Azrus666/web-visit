@@ -1,0 +1,295 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+}
+@font-face
+{
+    font-family: iran-num-bold;
+    src: url("../font/number/Vazir-Bold-FD-WOL.eot");
+    src: url("../font/number/Vazir-Bold-FD-WOL.ttf");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff");
+    src: url("../font/number/Vazir-Bold-FD-WOL.woff2");
+}
+
+.footer-part
+{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.20);
+    font-family: iran, sans-serif;
+    margin: 0 0 1rem 0;
+    min-width: 320px;
+
+}
+
+
+.footer-container
+{
+    width: 100%;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.pullback-part
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pullback-part img
+{
+    height: 30px;
+    cursor: pointer;
+
+}
+.pullback-part button
+{
+    border: 1px solid rgba(0,0,0,.30);
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 35px;
+    background-color: white;
+    color: rgba(0,0,0,.60);
+}
+
+.backup-part
+{
+    display: flex;
+    margin: 1rem 0 0 0;
+    font-size: 12px;
+    color:  rgba(0,0,0,.75);
+;
+}
+.separator
+{
+    padding: 0 1rem;
+}
+
+.foot-options
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem 0 2.5rem 0;
+}
+.foot-option
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: rgba(0,0,0,.75);
+    cursor: pointer;
+}
+
+.foot-option img
+{
+    padding: 0 0 .4rem 0;
+ }
+
+
+
+.footer-guide
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide-part
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.guide-part-title
+{
+    font-size: 17px;
+    cursor: pointer;
+    padding: 0 0 1rem 0;
+
+}
+.guide-main-part p
+{
+    display: flex;
+    flex-direction: column;
+    padding: .7rem 0;
+    font-size: 15px;
+    color: rgba(0,0,0,.65);
+    cursor: pointer;
+}
+
+.guide-media
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-icon
+{
+font-size: 35px;
+    padding: 0 1rem;
+    color: #a1a3a8;
+    transition: .5s;
+
+}
+.guide-icon-part
+{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem  0 2.2rem 0;
+}
+
+.instagram
+{
+    padding: 0 0 0 .7rem;
+}
+.instagram:hover
+{
+    color: #ff7daa;
+    cursor: pointer;
+}
+.x-twitter:hover
+{
+    color: black;
+}
+.linkedin-in:hover
+{
+    color: #7ad1ee;
+}
+.github:hover
+{
+    color: rgba(46, 44, 44, 0.95);
+}
+
+.email-description
+{
+    font-size: 17px;
+    margin: 0 0 1rem 0;
+}
+.email-part input
+{
+    border: none;
+    outline: none;
+    background-color: #f0f0f1;
+    height: 48px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.email-part button
+{
+    border: none;
+    outline: none;
+    background-color: #dedee3;
+    height: 48px;
+    width: 50px;
+    border-radius: 5px;
+    color: white;
+}
+@media screen and (max-width: 1024px)
+{
+  .third-guide-part
+  {
+      display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .foot-options
+    {
+        display: none;
+    }
+    .backup-part
+    {
+        margin: 2rem 0 2rem 0;
+        line-height: 17px;
+    }
+
+    .guide-main-part p
+    {
+        font-size: 14px;
+    }
+
+.footer-guide
+    {
+      flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 704px)
+{
+    .email-part input
+    {
+        width: calc(100% - 20%);
+    }
+    .guide-media
+    {
+        width: 100%;
+    }
+    .icon-container
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .guide-part
+    {
+        margin: 0 0 0 .5rem;
+    }
+    .pullback-part img
+    {
+        height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 470px)
+{
+    .guide-icon
+    {
+        font-size: 25px;
+        padding: 0 .5rem;
+
+    }
+    .icon-title
+    {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 376px)
+{
+    .guide-part
+    {
+        margin: 1.2rem 0 0 .5rem;
+    }
+    .guide-icon
+    {
+        font-size: 22px;
+    }
+
+    .email-description
+    {
+        font-size: 14px;
+        align-self: center;
+    }
+    .email-part input
+    {
+        width: calc(100% - 25%);
+    }
+
+}

@@ -1,0 +1,559 @@
+/*section header*/
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+
+}
+*
+{
+    font-family: iran,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+
+:root
+{
+    --font-light-color : rgba(102, 102, 114, 0.8);
+}
+:root
+{
+    --font-red-color : #ef4056
+}
+
+
+header
+{
+    box-shadow:0px 0px 1px rgba(0,0,0,.36);
+    height: 130px;
+
+}
+.header-up-container
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.right-side
+{
+    display: flex;
+    align-items: center;
+    margin: 0 2.5rem 0 0;
+}
+.right-side .logo img
+{
+    margin: .5rem 0 0 1rem ;
+}
+#search-bar
+{
+    width:600px ;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.15);
+    padding: 0 30px 0 0;
+
+
+}
+.searchbar-mobile
+{
+    display: block;
+    width: 95%;
+    margin: .5rem auto 0 auto;
+    display: none;
+}
+#search-bar-mobile
+{
+    width:100% ;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.15);
+    padding: 0 30px 0 0;
+
+
+}
+
+.left-side
+{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    margin:1rem 0 0 0;
+    font-family: iran,sans-serif;
+
+
+}
+
+.log-in-btn
+{
+    text-decoration: none;
+    display: flex;
+    color: rgb(98, 102, 109,1);
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.log-in-btn i
+{
+ margin: 0 0 0 .5rem;
+    transform: rotate(180deg);
+}
+
+.hr1
+{
+    width: 1px;
+    height: 23px;
+    background-color: rgb(98, 102, 109);
+    margin: 0 .6rem 0 .8rem;
+
+}
+.shop-icon
+{
+    transform: rotateY(180deg);
+    color: var(--font-light-color);
+
+}
+
+.header-down-container
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-family: iran,sans-serif;
+    height: 70px;
+
+
+}
+
+ .bottom-obj
+{
+    display: flex;
+    align-items: center;
+     margin: 0 2.4rem 0 0 ;
+     height: 100%;
+     transition: .4s;
+
+ }
+
+
+.head-items
+{
+    margin: 0 1rem 0 1rem;
+    color: rgb(98, 102, 109,.80);
+    font-family: iran,sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+    padding: 27px 7px 0 7px;
+    transition: all .4s linear;
+
+}
+.underline
+{
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-radius: 2px;
+    transition: .3s border-bottom-color;
+    z-index: 11;
+}
+
+.head-items:hover
+{
+    color: rgb(98, 102, 109,1);
+}
+
+
+.logo img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.hr
+{
+    width: 1px;
+    height: 15px;
+    background-color: var(--font-light-color);
+
+}
+.category
+{
+    color: #4b4b4b;
+    font-size: 16px;
+    display: flex;
+}
+
+.category img
+{
+    margin: 0 0 0 .3rem;
+}
+
+.sign-in-btn
+{
+    display: flex;
+    width: 100px;
+    height: 38px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0 16px 0 16px;
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.city-location
+{
+    font-size: .8rem;
+    margin: 0 0 5px 1.5rem;
+    color: var(--font-light-color) ;
+}
+/*section hedear*/
+
+/*header-menu*/
+.menu-container
+{
+
+    height: 500px;
+    direction: rtl;
+    display: none;
+    background-color: #FFFFFF;
+    flex-grow: 0;
+    font-family: iran, sans-serif;
+    position: absolute;
+    right: 3.5%;
+    left: 40%;
+    z-index: 10;
+    animation: menu-con-appearance .4s;
+}
+
+@keyframes menu-con-appearance
+{
+    from
+    {
+        opacity: 0%;
+    }
+    to
+    {
+        opacity: 100%;
+    }
+    
+}
+.menu
+{
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    overflow-y: scroll;
+}
+.menu-result
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin: 1rem 1.5rem 0 0 ;
+
+
+}
+
+.menu-item
+{
+  font-family: iran, sans-serif;
+    color: #474646;
+    padding: 1.2rem 1rem 1.5rem 0;
+    cursor: pointer;
+    font-size:.9rem;
+    transition: .4s;
+
+}
+.menu-item:hover
+{
+    background-color: #FFFFFF;
+    color:var(--font-red-color)
+}
+
+.menu-title
+{
+    width: 100%;
+    height: 10%;
+    margin: 0 0 .5rem 0;
+    font-size: .8rem ;
+}
+
+
+.all-brand
+{
+
+    width: 30%;
+    height: 100%;
+
+}
+
+.all-brand-p
+{
+    margin: 0 0 1.3rem 0;
+    cursor: pointer;
+    transition: .4s;
+}
+.all-brand-p:hover
+{
+    color:var(--font-red-color)
+
+}
+.all-models-item
+{
+    margin: 0 0 .8rem 0;
+    color: rgb(98, 102, 109,1);
+    cursor: pointer;
+    transition: .4s;
+}
+.all-models-item:hover
+{
+    color:var(--font-red-color)
+}
+
+.base-on-price
+{
+   background-color: #FFFFFF;
+    width: 20%;
+
+}
+.base-on-price p
+{
+    margin: 3.6rem 0 1.5rem 0;
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 1350px)
+{
+
+    .category
+    {
+        font-size: 15px;
+    }
+    .head-items
+    {
+        font-size: 12px;
+        margin: 0 .4rem 0 .4rem ;
+    }
+    .city-location
+    {
+        font-size: 12px;
+        margin: 0 5rem 7px 1.5rem;
+    }
+
+    .hr
+    {
+        margin: 0 0 8px 0;
+    }
+    .log-in-btn
+    {
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 1123px)
+{
+
+    .category
+    {
+        font-size: 13px;
+    }
+    .head-items
+    {
+        font-size: 11px;
+        margin: 0 .3rem 0 .3rem ;
+    }
+    .city-location
+    {
+        font-size: 11px;
+        margin: 0 5rem 7px 2.4rem;
+    }
+    .hr
+    {
+        margin: 0 0 8px 0;
+    }
+    .log-in-btn
+    {
+        font-size: 14px;
+    }
+
+    .left-side
+    {
+        margin: .5rem 0 0 0;
+    }
+}
+
+
+
+.phone-header
+{
+
+    direction: rtl;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: iran, sans-serif;
+}
+.head-menu-logo
+{
+    margin: 0 1.2rem 0 1.2rem;
+    cursor: pointer;
+}
+
+.logo-mobile
+{
+    margin: 0 auto;
+}
+.icon-flesh
+{
+    transform: rotate(180deg);
+}
+
+.log-in-btn-mobile
+{
+    display: flex;
+    color: rgba(0 ,0 ,0 ,.80);
+    width: 100px;
+    margin: 0 .7rem  0 0;
+    cursor: pointer;
+    padding: 3px;
+}
+.log-in-btn-mobile i
+{
+    color: rgba(0 ,0 ,0 ,.80);
+}
+
+
+.log-in-btn-mobile p
+{
+    margin: 0 .5rem ;
+    font-size: 12px;
+
+}
+.menu-container-mobile
+{
+
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 312px;
+    font-family: iran, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: none;
+    z-index: 20;
+    transition: .4s;
+}
+@keyframes mobile-menu-open
+{
+    from
+    {
+        right: -500px;
+    }
+    to
+    {
+        right : 0 ;
+    }
+}
+@keyframes mobile-menu-closer
+{
+    from
+    {
+        right: 0;
+    }
+    to
+    {
+        right : -500px ;
+    }
+}
+.menu-container-mobile1
+{
+    z-index: 12;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    font-family: iran, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: none;
+}
+
+
+.menu-mobile
+{
+    height: 70%;
+    display: flex;
+    flex-direction:column;
+    margin: 0 .8rem 0 .8rem;
+}
+.menu-item-mobile
+{
+    margin: 1rem 0 2rem 0;
+    cursor: pointer;
+    transition: .4s;
+}
+.menu-item-mobile:hover
+{
+    color:#ef4056 ;
+}
+
+
+.logo-bottom
+{
+    border-bottom: solid rgba(0 ,0 ,0 ,.25) 1px;
+    margin: 0 0 0 0;
+}
+.item-with-border
+{
+    padding: 0 0 1rem 0;
+}
+
+.menu-item-des
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1050px)
+{
+    .head-container
+    {
+        display: none;
+    }
+    .phone-header
+    {
+        display: flex;
+    }
+    .search-phone-head
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .head-menu-logo i
+    {
+        margin: 0 .3rem 0 .7rem;
+    }
+    .searchbar-mobile
+    {
+        display: block;
+    }
+
+
+}

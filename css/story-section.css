@@ -1,0 +1,113 @@
+@font-face
+{
+    font-family: iran;
+    src: url("../font/Vazir.eot");
+    src: url("../font/Vazir.ttf");
+    src: url("../font/Vazir.woff");
+    src: url("../font/Vazir.woff2");
+
+}
+*
+{
+    font-family: iran,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+:root
+{
+    --font-light-color : rgba(102, 102, 114, 0.8);
+}
+
+
+.story-container
+{
+    width: 100%;
+    direction: rtl;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story-section
+{
+    width:90%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.story-item
+{
+    height: 70%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: iran, sans-serif;
+    font-size: 11px;
+    margin: 0 .5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+.story-item:hover
+{
+    scale: 1.1;
+}
+.story-item-img
+{
+    background-size: cover;
+    background-position: center;
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    border : 2px solid crimson;
+    margin: 0 0 .5rem 0;
+    padding: 2px;
+}
+
+@media screen and (max-width: 1028px)
+{
+    .story-item-img
+    {
+        /*width: 75px;*/
+        /*height: 75px;*/
+    }
+
+
+
+    .story-item-info
+    {
+      font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 936px)
+{
+    .story-item
+    {
+        margin: 0 1rem 0 0 ;
+
+    }
+
+    .story-item-img
+    {
+        width: 76px;
+        height: 76px;
+    }
+
+    .story-item-info
+    {
+        font-size: 10px;
+    }
+}
+
+
+
+.story-item-info
+{
+    color: var(--font-light-color);
+    text-align: center;
+}
+
